@@ -1,0 +1,26 @@
+{
+  "cwd": "C:\\Users\\JANUS\\Desktop\\miapp",
+  "type": [
+    "web"
+  ],
+  "name": "Postres",
+  "framework": "core",
+  "template": "blank",
+  "bundler": "webpack",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": true,
+    "color": "#ff7d00",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false,
+  "webpack": {
+    "developmentSourceMap": true,
+    "productionSourceMap": true,
+    "hashAssets": false,
+    "preserveAssetsPaths": false,
+    "inlineAssets": true
+  }
+}
