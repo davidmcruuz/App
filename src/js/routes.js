@@ -2,6 +2,8 @@
 import HomePage from '../pages/home.f7.html';
 import Postres from '../pages/postres.f7.html';
 import Sopas from '../pages/sopas.f7.html';
+import Perfil from '../pages/perfil.f7.html';
+
 
 var routes = [
   {
@@ -15,6 +17,10 @@ var routes = [
     {
     path: '/sopas/',
     component: Sopas,
+  },
+        {
+    path: '/perfil/',
+    component: Perfil,
   },
 ];
 
