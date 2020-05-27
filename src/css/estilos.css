@@ -132,7 +132,17 @@
 .slide1 {
     background-image: url(../static/images/torta-fresa.jpg)
 }
-
+.card-imagen img{
+    position: absolute;
+    height: 300px;
+margin-left: -20%
+}
+.card-header {
+    color:white;
+    display:block;
+    background-color: rgba(0, 0, 0, 0.29);
+    height: 300px;
+}
 /*swipe home ***************************/
 
 
@@ -160,7 +170,9 @@
 
 .busqueda {
     padding: 10px;
-    z-index: 1;
+    z-index: -1;
+    position: absolute;
+    width: 95%;
 }
 
 .busqueda-texto {
