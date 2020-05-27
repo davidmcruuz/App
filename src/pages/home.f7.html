@@ -1,57 +1,77 @@
-<template>
-    <div class="page" data-name="home">
-        <!-- Top Navbar -->
-        <div class="navbar navbar-large">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner sliding">
-                <div class="title">CherryApp</div>
-                <div class="title-large">
-                    <div class="title-large-text">CherryApp</div>
-                </div>
-                <a href="/perfil/" class="link"><i class="f7-icons color-black">line_horizontal_3</i></a>
-            </div>
-        </div>
-        <!-- Toolbar-->
-        <div class="toolbar toolbar-bottom">
-            <div class="toolbar-inner">
-                <a href="/postres/" class="link"><i class="f7-icons color-black">square_grid_2x2_fill</i></a>
-                <a href="/" class="link"><i class="f7-icons color-black">house</i></a>
-                <a href="/busqueda/" class="link"><i class="f7-icons color-black">search</i></a>
-            </div>
-        </div>
-        <!-- Scrollable page content-->
-        <div class="page-content">
-            <div class="block">
-                <h2 class="titulos-h2">Últimas recetas</h2>
-            </div>
-            <div class="block">
-                <div class="row">
-                    <div class="col-100 medium-50">
-                        <div class="receta">
-                            <div class="foto-receta"><img src="../static/images/torta-fresa.jpg" alt=""></div>
-                            <div class="info-receta">
-                                <h3>Postre de fresas</h3>
-                                <p>La mejor receta de Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laborum deleniti dolor!</p>
-                                <a href="">Ver receta</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-100 medium-50">.col-100.medium-50
-                        <div class="receta">
-                            <div class="foto-receta"><img src="../static/images/vaso-fresa.jpg" alt=""></div>
-                            <div class="info-receta">
-                                <h3>Postre de fresas</h3>
-                                <p>La mejor receta de Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, laborum deleniti dolor!</p>
-                                <a href="">Ver receta</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</template>
-<script>
-    export default {}
+   <template>
+       <div class="page" data-name="home">
+           <!-- Top Navbar -->
+           <div class="busqueda">
+               <div class="busqueda-contenedor">
+                   <form class="busqueda-form" action="#" method="post">
+                       <div class="busqueda-texto-contenedor">
+                           <input class="busqueda-texto" type="search" placeholder="Buscar">
+                       </div>
+                       <input class="busqueda-flecha" type="submit" value="&#10140;" />
+                   </form>
+               </div>
+           </div>
+           <!-- Toolbar-->
+           <div class="toolbar toolbar-bottom">
+               <div class="toolbar-inner">
+                   <a href="/postres/" class="link"><i class="f7-icons color-black">rectangle_on_rectangle_angled</i></a>
+                   <a href="/" class="link"><i class="f7-icons color-black">house</i></a>
+                   <a href="/perfil/" class="link"><i class="f7-icons color-black">person</i></a>
+               </div>
+           </div>
+           <!-- Scrollable page content-->
+           <div class="swiper-container swiper-init demo-swiper">
+               <div class="swiper-wrapper">
+                   <div class="swiper-slide">
+                       <div class="card card-expandable">
+                           <div class="card-content">
+                               <div class="bg-color-red" style="height: 300px">
+                                   <div class="card-header text-color-white display-block">
+                                       Framework7
+                                       <br>
+                                       <small style="opacity: 0.7">Build Mobile Apps</small>
+                                   </div>
+                                   <a href="#" class="link card-close card-opened-fade-in color-white" style="position: absolute; right: 15px; top: 15px">
+                                       <i class="icon f7-icons">multiply_circle_fill</i>
+                                   </a>
+                               </div>
+                               <div class="card-content-padding">
+                                   <p>Framework7 - is a free and open source HTML mobile framework to develop hybrid mobile apps or web apps with iOS or Android (Material) native look and feel. It is also an indispensable prototyping apps tool to show working app prototype as soon as possible in case you need to.</p>
+                                   ...
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="swiper-slide">
+                       <div class="card card-expandable">
+                           <div class="card-content">
+                               <div class="bg-color-yellow" style="height: 300px">
+                                   <div class="card-header text-color-black display-block">
+                                       Framework7
+                                       <br>
+                                       <small style="opacity: 0.7">Build Mobile Apps</small>
+                                   </div>
+                                   <a href="#" class="link card-close card-opened-fade-in color-black" style="position: absolute; right: 15px; top: 15px">
+                                       <i class="icon f7-icons">multiply_circle_fill</i>
+                                   </a>
+                               </div>
+                               <div class="card-content-padding">
+                                   <p>Framework7 - is a free and open source HTML mobile framework to develop hybrid mobile apps or web apps with iOS or Android (Material) native look and feel. It is also an indispensable prototyping apps tool to show working app prototype as soon as possible in case you need to.</p>
+                                   ...
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="swiper-slide">Slide 3</div>
+                   <div class="swiper-slide">Slide 4</div>
+                   <div class="swiper-slide">Slide 5</div>
+                   <div class="swiper-slide">Slide 6</div>
+                   <div class="swiper-slide">Slide 7</div>
+                   <div class="swiper-slide">Slide 8</div>
+                   <div class="swiper-slide">Slide 9</div>
+                   <div class="swiper-slide">Slide 10</div>
+               </div>
+           </div>
 
-</script>
+       </div>
+   </template>

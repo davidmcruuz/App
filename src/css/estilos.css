@@ -1,12 +1,15 @@
 .titulos-h2 {
-    color: orange;
+    color: rgb(255, 67, 97);
     text-align: center;
 }
 
 .foto-receta img {
     width: 100%;
 }
-
+.toolbar-inner {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 /*login****************/
 #bglogin {
     background-color: rgb(255, 67, 97)
@@ -26,30 +29,35 @@
     margin-top: 30px;
     width: 60%;
 }
-#login:before, #login:after {
-  content: " ";
-  display: block;
-  background: rgba(0,0,0,0.1);
-  position: absolute;
-  width: 90px;
-  height: 30px;
-}
-#login:before {
-  margin-top: -12px;
-  margin-left: -30px;
-  -webkit-transform: rotate(-25deg);
-  -moz-transform: rotate(-25deg);
-  -o-transform: rotate(-25deg);
-  transform: rotate(-25deg);
-}
+
+#login:before,
 #login:after {
-  margin-top: -400px;
-  margin-left: 240px;
-  -webkit-transform: rotate(32deg);
-  -moz-transform: rotate(32deg);
-  -o-transform: rotate(32deg);
-  transform: rotate(32deg);
+    content: " ";
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 90px;
+    height: 30px;
 }
+
+#login:before {
+    margin-top: -12px;
+    margin-left: -30px;
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+}
+
+#login:after {
+    margin-top: -400px;
+    margin-left: 240px;
+    -webkit-transform: rotate(32deg);
+    -moz-transform: rotate(32deg);
+    -o-transform: rotate(32deg);
+    transform: rotate(32deg);
+}
+
 #login form {
     width: 80%;
     margin: auto;
@@ -112,5 +120,80 @@
     font-size: 12px;
 }
 
-#login form a:active {
-    background: rgb(57, 211, 0);
+/*cards postres************************/
+
+.swiper-slide {
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 8em 3em;
+    color: black;
+}
+
+.slide1 {
+    background-image: url(../static/images/torta-fresa.jpg)
+}
+
+/*swipe home ***************************/
+
+
+
+
+/*buscar*************************/
+.busqueda-form {
+    overflow: hidden;
+    position: relative;
+    border-color: #888;
+    border-radius: 35px;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.busqueda-texto-contenedor {
+    padding: 0 66px 0 20px;
+    overflow: hidden;
+}
+
+.busqueda-texto {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.busqueda {
+    padding: 10px;
+    z-index: 1;
+}
+
+.busqueda-texto {
+    height: 60px;
+    color: #333;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 26px;
+}
+
+.busqueda-flecha {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: rgb(255, 67, 97);
+    font-size: 30px;
+    line-height: 60px;
+}
+
+
+.usuario {
+    text-align: center;
+    margin-top: 40px;
+}
+.usuario h1 {
+    color: rgb(255, 67, 97);
+}
+.usuario h4{
+    margin-top: -20px;
+    color: gray;
+}
