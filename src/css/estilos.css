@@ -6,10 +6,12 @@
 .foto-receta img {
     width: 100%;
 }
+
 .toolbar-inner {
     padding-left: 40px;
     padding-right: 40px;
 }
+
 /*login****************/
 #bglogin {
     background-color: rgb(255, 67, 97)
@@ -120,34 +122,78 @@
     font-size: 12px;
 }
 
-/*cards postres************************/
+/*cards ************************/
 
-.swiper-slide {
+.page {
+    background-image: url(../static/images/patron.jpg);
     background-size: cover;
+    height: 100%;
+}
+.swiper-container {
+    height: 95%;
+    overflow: visible;
+}
+.swiper-slide {
     box-sizing: border-box;
-    padding: 8em 3em;
+    padding-top: 40px;
     color: black;
 }
-
-.slide1 {
-    background-image: url(../static/images/torta-fresa.jpg)
+.card {
+    height: 450px;
+    width: 300px;
+    margin: auto;
 }
-.card-imagen img{
+.card-imagen img {
     position: absolute;
-    height: 300px;
-margin-left: -20%
+    height: 450px;
+    margin-left: -40%
 }
+
 .card-header {
-    color:white;
-    display:block;
-    background-color: rgba(0, 0, 0, 0.29);
-    height: 300px;
+/*    color: white;*/
+    display: flex;
+    flex-flow:wrap;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 450px;
 }
-/*swipe home ***************************/
+.card-header span{
+    margin-bottom: 20%;
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+hr {
+    background-color: rgb(255, 67, 97);
+    border-color: rgb(255, 67, 97);
+    margin: 0 -30%;
+    margin-top: 10px;
+    height: 2px
+}
+.card-header p{
+    color: #d4d4d4;
+}
+.card-expandable .card-content {
+    width: 100%;
+    height: 100%;
+}
+.card-content-padding {
+    padding-bottom: 50px;
+}
+/*postres ***************************/
 
-
-
-
+.list {
+    margin-top: 25%;
+}
+.item-inner {
+    height: 100px;
+}
+.item-inner img{
+    width: 105%;
+    position: absolute;
+    overflow: hidden;
+    margin-left: -5%;
+}
 /*buscar*************************/
 .busqueda-form {
     overflow: hidden;
@@ -156,6 +202,7 @@ margin-left: -20%
     border-radius: 35px;
     border-style: solid;
     border-width: 3px;
+    background-color: white;
 }
 
 .busqueda-texto-contenedor {
@@ -170,8 +217,6 @@ margin-left: -20%
 
 .busqueda {
     padding: 10px;
-    z-index: -1;
-    position: absolute;
     width: 95%;
 }
 
@@ -202,10 +247,12 @@ margin-left: -20%
     text-align: center;
     margin-top: 40px;
 }
+
 .usuario h1 {
     color: rgb(255, 67, 97);
 }
-.usuario h4{
+
+.usuario h4 {
     margin-top: -20px;
     color: gray;
 }

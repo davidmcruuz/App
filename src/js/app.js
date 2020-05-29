@@ -16,14 +16,17 @@ import routes from './routes.js';
 import App from '../app.f7.html';
 
 var app = new Framework7({
-  root: '#app', // App root element
-  component: App, // App main component
+    root: '#app', // App root element
+    component: App, // App main component
 
-  name: 'Postres', // App name
-  theme: 'auto', // Automatic theme detection
+    name: 'Postres', // App name
+    theme: 'auto', // Automatic theme detection
 
-
-
-  // App routes
-  routes: routes,
+    // App routes
+    routes: routes,
+});
+$(document).ready(function () {
+    $(".card card-expandable").on("click", function () {
+        $('.busqueda').toggle();
+    });
 });
