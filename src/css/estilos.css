@@ -180,11 +180,11 @@ hr {
 .card-content-padding {
     padding-bottom: 50px;
 }
+.card-content-padding br{
+    margin-bottom: 20px;
+}
 /*postres ***************************/
 
-.list {
-    margin-top: 25%;
-}
 .item-inner {
     height: 100px;
 }
@@ -193,6 +193,49 @@ hr {
     position: absolute;
     overflow: hidden;
     margin-left: -5%;
+}
+.list .item-title {
+    font-size: 20px;
+    color: rgb(255, 67, 97);
+    font-style: oblique;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.62);
+    height: 100px;
+    width: 100%;
+    padding-left: 50px
+}
+.list .item-content{
+    padding: 0;
+}
+.accordion-item {
+    margin-bottom: 20px;
+}
+.list {
+    margin: 0;
+}
+.list .item-link .item-inner {
+    padding: 0;
+}
+.accordion-item-content p{
+    padding: 0 20px
+}
+.nivel {
+    font-weight: 700;
+    background-color: rgb(255, 67, 97);
+    margin: 0;
+    height: 130px;
+    display: flex;
+    align-items: center
+}
+.card-content-padding ul{
+    list-style-type:square;
+    margin-left: 20px
+}
+.card-content-padding {
+    padding-top: 0
 }
 /*buscar*************************/
 .busqueda-form {
