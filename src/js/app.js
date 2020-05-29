@@ -24,9 +24,30 @@ var app = new Framework7({
 
     // App routes
     routes: routes,
+    lazy: {
+        threshold: 50,
+        sequential: false,
+    },
+
 });
 $(document).ready(function () {
     $(".card card-expandable").on("click", function () {
         $('.busqueda').toggle();
     });
 });
+$$('img.lazy').trigger('lazy');
+$$('div.lazy').trigger('lazy');
+
+$(document).ready(function () {
+                function showWindow() {
+                    $('#onload').show();
+                    $('.hidden').css('overflow', 'hidden');
+                    setTimeout(hideWindow, 1000)
+                }
+
+                function hideWindow() {
+                    $('#onload').hide();
+                    $('.hidden').css('overflow', 'scroll');
+                }
+                setTimeout(showWindow, 1000)
+            })
