@@ -38,16 +38,43 @@ $(document).ready(function () {
 $$('img.lazy').trigger('lazy');
 $$('div.lazy').trigger('lazy');
 
-$(document).ready(function () {
-                function showWindow() {
-                    $('#onload').show();
-                    $('.hidden').css('overflow', 'hidden');
-                    setTimeout(hideWindow, 1000)
-                }
+//preloader
+$(document).on('click', '.icono-perfil', function () {
+    $('.icono-perfil').click(function () {
+        myFunction(this);
+    });
 
-                function hideWindow() {
-                    $('#onload').hide();
-                    $('.hidden').css('overflow', 'scroll');
-                }
-                setTimeout(showWindow, 1000)
-            })
+    function myFunction(div) {
+        $('#loader').toggle();
+        $(div).toggle();
+
+    }
+    setTimeout(function () {
+        $('#onload').remove();
+        window.open(link);
+    }, 1000); //2 seconds
+});
+
+//abrir popup
+//var abrirPopupInicial = app.popup.open(".popup-inicial");
+$(document).ready(function () {
+    app.popup.open(".popup-inicial");
+});
+var cerrarPopup;
+
+function cerrar_popup() {
+    cerrar_popup = setTimeout(function () {
+        var abrirPopupinicial = app.popup.close(".popup-inicial", true);
+    }, 2000);
+}
+cerrar_popup()
+
+//creditos
+var accordions = document.querySelectorAll(".accordion");
+
+for (var i = 0; i < accordions.length; i++) {
+  accordions[i].onclick = function() {
+    this.classList.toggle("active");
+    this.nextElementSibling.classList.toggle("show");
+  };
+}

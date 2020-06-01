@@ -1,14 +1,13 @@
-
-import HomePage from '../pages/home.f7.html';
+import cards from '../pages/cards.f7.html';
 import Postres from '../pages/postres.f7.html';
 import Perfil from '../pages/perfil.f7.html';
-import Login from '../pages/login.f7.html';
+import HomePage from '../pages/home.f7.html';
 
 
 var routes = [
   {
-    path: '/',
-    component: HomePage,
+    path: '/cards/',
+    component: cards,
   },
     {
     path: '/postres/',
@@ -19,8 +18,8 @@ var routes = [
     component: Perfil,
   },
     {
-    path: '/login/',
-    component: Login,
+    path: '/',
+    component: HomePage,
   },
 ];
 

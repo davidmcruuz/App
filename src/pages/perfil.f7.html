@@ -1,70 +1,74 @@
 <template>
-    <div class="page" data-name="sopas">
+    <div class="page" data-name="perfil">
         <!-- Top Navbar -->
 
         <!-- Toolbar-->
         <div class="toolbar toolbar-bottom">
             <div class="toolbar-inner">
                 <a href="/postres/" class="link"><i class="f7-icons color-black">rectangle_on_rectangle_angled</i></a>
-                <a href="/" class="link"><i class="f7-icons color-black">house</i></a>
+                <a href="/cards/" class="link"><i class="f7-icons color-black">house</i></a>
                 <a href="/perfil/" class="link"><i class="f7-icons color-black icono-perfil">person</i></a>
             </div>
         </div>
         <!-- Scrollable page content-->
-        <div class="page-content hidden">
-           <div class="centrado" id="onload"><div class="lds-spinner">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            </div></div>
+        <div class="page-content">
+            <div class="centrado" id="onload">
+                <div class="lds-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <div class="usuario">
-                <img src="../static/images/logo-01.png" height="100px" alt="">
+                <img src="../static/images/logo-01.png" height="100px" alt="Foto de perfil">
                 <h1>David Montaño</h1>
                 <h4>davids.montanoc@utadeo.edu.co</h4>
             </div>
-            <div class="list">
-                <div class="list links-list">
-                    <ul>
-                        <li>
-                            <a href="#">Mis recetas</a>
-                        </li>
-                        <li>
-                            <a href="#">Cuenta</a>
-                        </li>
-                        <li>
-                            <a href="#">Favoritos</a>
-                        </li>
-                        <li>
-                            <a href="#">Créditos</a>
-                        </li>
-                    </ul>
-                    <ul class="sesion">
-                        <li class="swipeout">
-                            <div class="item-content swipeout-content">
-                                <div class="item-media"><i class="icon icon-f7"></i>
+            <div class="creditos">
+                <div class="list">
+                    <div class="accordion-item">
+                                <div class="lista-creditos">Créditos
+                                   <label class="toggle toggle-init">
+                                    <input type=checkbox  class="accordion-item">
+                                    <span class="toggle-icon item-content item-link"></span>
+                                </label>
                                 </div>
-                                <div>
-                                    <div class="cerrar-sesion ">Desliza para cerrar sesión</div>
+                            <div class="accordion-item-content">
+                                <div class="block">
+                                    <p>Realizada por: David Steven Montaño </p><p> Integración de sistemas tecnológicos 2 </p><p> Docente: Gilberto Duque Ulloa</p> <p> Universidad Jorge Tadeo Lozano</p>
+                                    <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.923000195141!2d-74.06956073474934!3d4.607805893737862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a28273232d%3A0x8f335cc5fc58e786!2sUniversidad%20de%20Bogot%C3%A1%20Jorge%20Tadeo%20Lozano!5e0!3m2!1ses!2sco!4v1590981850957!5m2!1ses!2sco"></iframe></div>
                                 </div>
                             </div>
-                            <div class="swipeout-actions-right">
-                                <a href="/login/" class="swipeout-delete button button-raised">Cerrar</a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="list cerrar">
+                        <div class="list links-list">
+                            <ul class="sesion">
+                                <li class="swipeout">
+                                    <div class="item-content swipeout-content">
+                                        <div class="item-media"><i class="icon icon-f7"></i>
+                                        </div>
+                                        <div>
+                                            <div class="cerrar-sesion ">Desliza para cerrar sesión</div>
+                                        </div>
+                                    </div>
+                                    <div class="swipeout-actions-right">
+                                        <a href="/" class="swipeout-delete button button-raised">Cerrar</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </template>
 <script>
     export default {}
